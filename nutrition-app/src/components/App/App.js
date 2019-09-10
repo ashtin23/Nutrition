@@ -1,20 +1,21 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from "react";
 import Nav from "../Nav/Nav";
+import Home from "../Home/Home";
+import './App.css';
 
 
-function App() {
+class App extends Component {
+  
+  render() {
   return (
     <div className="App">
       <Nav />
       <div className="body">
-        <form>
-          <input type="text"></input>
-          <button type="submit">Submit</button>
-        </form>
+        <Home />
       </div>
     </div>
   );
+}
 }
 
 export default App;
