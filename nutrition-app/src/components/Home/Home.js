@@ -6,7 +6,8 @@ class Home extends Component {
     console.log(this.props);
 
     return (
-      <div>
+      <div className="body">
+        <h2>Get started by searching for your favorite food!</h2>
         <form className="search">
           <input type="text"></input>
           <button type="submit">Submit</button>
