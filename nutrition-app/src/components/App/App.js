@@ -19,10 +19,10 @@ class App extends Component {
           <main>
             <Nav />
             <Route path="/"
-            component={Home}
+            exact component={Home}
             />
             <Route path="/list"
-            component={List}
+            exact component={List}
             />
           </main>
         </div>
