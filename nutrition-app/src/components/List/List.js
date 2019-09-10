@@ -7,7 +7,9 @@ class List extends Component {
 
     return (
       <div>
-        <h1>There will eventually be a list of common foods here.</h1>
+        <main>
+          <h1>There will eventually be a list of common foods here.</h1>
+        </main>
       </div>
     );
   }

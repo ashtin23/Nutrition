@@ -14,7 +14,7 @@ class Nav extends Component {
               </Link>
             </div>
             <div className="right">
-              <Link to="/foods" className="item" key={1}>
+              <Link to="/list" className="item" key={1}>
                 Common Foods
               </Link>
             </div>
