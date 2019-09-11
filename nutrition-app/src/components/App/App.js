@@ -7,6 +7,20 @@ import Food from "../Food/Food";
 import "./App.css";
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state= {
+      name: "",
+      macronutrients: {
+        fat: 0,
+        carbohydrates: 0,
+        protein: 0
+      }
+    }
+  }
+  
+
   render() {
     return (
         // <div className="App">
