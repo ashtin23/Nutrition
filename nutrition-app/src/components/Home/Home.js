@@ -8,26 +8,11 @@ class Home extends Component {
       super(props);
 
       this.state= {
-        redirect: false
+
       }
-      // this.setRedirect = this.setRedirect.bind(this);
-      // this.renderRedirect = this.renderRedirect.bind(this);
     }
-  
-  // setRedirect = () => {
-  //   this.setState({
-  //     redirect: true
-  //   })
-  // } 
-  
-  // renderRedirect = () => {
-  //   if(this.state.redirect) {
-  //     return <Redirect to='/food' />
-  //   }
-  // }
 
   render() {
-    // console.log(this.state);
 
     return (
       <div className="body">
