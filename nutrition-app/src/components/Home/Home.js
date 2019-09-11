@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./Home.css";
-// import List from "../List/List"
 
 class Home extends Component {
     constructor(props) {
@@ -11,29 +10,32 @@ class Home extends Component {
       this.state= {
         redirect: false
       }
+      // this.setRedirect = this.setRedirect.bind(this);
+      // this.renderRedirect = this.renderRedirect.bind(this);
     }
   
-  setRedirect = () => {
-    this.setState({
-      redirect: true
-    })
-  } 
+  // setRedirect = () => {
+  //   this.setState({
+  //     redirect: true
+  //   })
+  // } 
   
-  renderRedirect = () => {
-    if(this.state.redirect) {
-      return <Redirect to='/food' />
-    }
-  }
+  // renderRedirect = () => {
+  //   if(this.state.redirect) {
+  //     return <Redirect to='/food' />
+  //   }
+  // }
 
   render() {
-    console.log(this.props);
+    // console.log(this.state);
 
     return (
       <div className="body">
         <h2>Get started by searching for your favorite food!</h2>
         <form className="search">
           <input type="text"></input>
-          <button type="submit" onClick={this.setRedirect}>Submit</button>
+          {/* <button type="submit" onClick={this.setRedirect}>Submit</button> */}
+          <Link to="/food">Search</Link>
         </form>
       </div>
     );

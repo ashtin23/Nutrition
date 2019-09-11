@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import "./Food.css";
 
 class Food extends Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+
+  // }
 
   render() {
 
