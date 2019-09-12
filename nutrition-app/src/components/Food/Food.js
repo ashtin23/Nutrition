@@ -42,8 +42,10 @@ class Food extends Component {
       });
   }
 
+
   render() {
     // console.log(this.state)
+
     return (
       <div className="body">
         <h2>{this.state.name[800]}</h2>
