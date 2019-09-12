@@ -8,8 +8,12 @@ const foodUrl = "http://localhost:3131/api/macronutrients";
 
 
 class List extends Component {
- constructor() {
-   super();
+ constructor(props) {
+   super(props);
+
+   this.state = {
+     unit: []
+   }
  } 
  
   componentDidMount() {
@@ -17,12 +21,13 @@ class List extends Component {
     axios
       .get(foodUrl)
       .then(res => {
-        console.log(res.data[0].report.foods[0].name)
-        res.data[0].report.foods.forEach(i => {
-          let temp = this.props.name
-          temp.push(i.name)
+        // console.log(res.data[0].report.foods[0].nutrients[0].unit)
+        // console.log(res.data[0].report.foods[0].nutrients[0].value)
+        res.data[0].report.foods[0].nutrients.forEach(i => {
+          let temp = this.state.unit
+          temp.push(i.unit)
           this.setState({
-            name: temp
+            unit : temp
           })
         })
         
@@ -33,14 +38,15 @@ class List extends Component {
   }
   
   render() {
-    console.log(this.props);
-
+    console.log(this.state);
     return (
       <div>
         <main>
           <ul>
             <li>
-              <Link />
+              <Link to="/food">
+                Apple
+                </Link>
             </li>
           </ul>
         </main>

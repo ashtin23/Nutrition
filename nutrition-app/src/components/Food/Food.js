@@ -48,7 +48,7 @@ class Food extends Component {
 
     return (
       <div className="body">
-        <h2>{this.state.name[800]}</h2>
+        <h2>{this.state.name[105]}</h2>
       </div>
     );
   }
