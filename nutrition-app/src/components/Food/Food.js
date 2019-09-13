@@ -12,7 +12,10 @@ class Food extends Component {
     console.log(this.props)
     return (
       <div className="body">
+        <div className="container">
         <h2>Food Component</h2>
+        
+        </div>
       </div>
     );
   }

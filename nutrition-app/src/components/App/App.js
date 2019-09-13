@@ -12,8 +12,8 @@ import axios from "axios";
 const foodUrl = "http://localhost:3131/api/macronutrients";
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       name: [],
@@ -34,14 +34,14 @@ class App extends Component {
     axios
       .get(foodUrl)
       .then(res => {
-        console.log(res.data[0].report.foods[0].name)
+        // console.log(res.data[0].report.foods[0].name)
         res.data[0].report.foods.forEach(i => {
           let temp = res.data[0].report.foods[i].name
           temp.push(i.name)
           this.setState({
             name: temp
           })
-        })
+       })
         
       })
       .catch(err => {
