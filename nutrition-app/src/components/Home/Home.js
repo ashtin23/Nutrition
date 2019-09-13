@@ -6,11 +6,14 @@ import "./Home.css";
 class Home extends Component {
     constructor(props) {
       super(props);
-
-      this.state= {
-
-      }
     }
+
+    handleClick = (e) => {
+      console.log(e.target.key)
+      this.setState({ 
+          listing : e.target.key
+      })
+  }
 
   render() {
 
@@ -20,7 +23,9 @@ class Home extends Component {
         <form className="search">
           <input type="text"></input>
           {/* <button type="submit" onClick={this.setRedirect}>Submit</button> */}
-          <Link to="/food">Search</Link>
+          <Link to="/food">
+
+          </Link>
         </form>
       </div>
     );

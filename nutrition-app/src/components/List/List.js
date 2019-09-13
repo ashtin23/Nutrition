@@ -46,7 +46,7 @@ class List extends Component {
             <li>
               <Link to="/food">
                 Apple
-                </Link>
+              </Link>
             </li>
           </ul>
         </main>
