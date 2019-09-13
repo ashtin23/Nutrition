@@ -8,13 +8,6 @@ class Home extends Component {
       super(props);
     }
 
-    handleClick = (e) => {
-      console.log(e.target.key)
-      this.setState({ 
-          listing : e.target.key
-      })
-  }
-
   render() {
 
     return (
@@ -24,7 +17,7 @@ class Home extends Component {
           <input type="text"></input>
           {/* <button type="submit" onClick={this.setRedirect}>Submit</button> */}
           <Link to="/food">
-
+            Search
           </Link>
         </form>
       </div>
