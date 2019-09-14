@@ -3,10 +3,6 @@ import "./Food.css";
 
 
 class Food extends Component {
-  constructor(props) {
-    super(props);
-
-  }
 
   render() {
     console.log(this.props)

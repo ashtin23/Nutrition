@@ -2,15 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./List.css";
 
-import axios from "axios";
-
-
-
 class List extends Component {
- constructor(props) {
-   super(props);
-
- } 
   
   render() {
     return (

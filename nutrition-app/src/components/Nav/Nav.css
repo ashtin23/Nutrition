@@ -1,9 +1,26 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: lightblue;
+}
 .right {
-    text-align: right
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
 }
 .left {
-    text-align: left
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
 }
-.nav {
-    background-color: lightblue;
+
+.left h1 {
+    font-size: 32px;
+    margin: 0;
+    padding-right: 12px;
+    padding-left: 5px;
+    padding-top: 5px;
+    background: -webkit-linear-gradient(#1A416A, white);
+
 }

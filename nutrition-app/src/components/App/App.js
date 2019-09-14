@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import { withRouter } from "react-router-dom";
-import { BrowserRouter as Router} from 'react-router-dom'
 import Nav from "../Nav/Nav";
 import Home from "../Home/Home";
 import List from "../List/List";
@@ -28,6 +27,7 @@ class App extends Component {
       ]
     };
   }
+
 
   componentDidMount() {
     // console.log(this.state);
