@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
-import { withRouter } from "react-router-dom";
+// import { withRouter } from "react-router-dom";
 import Nav from "../Nav/Nav";
 import Home from "../Home/Home";
 import List from "../List/List";
@@ -34,27 +34,37 @@ class App extends Component {
     axios
       .get(foodUrl)
       .then(res => {
-        // console.log(res.data[0].report.foods[0].name)
+        // let myData = res.data[0].report.foods[0];
         res.data[0].report.foods.forEach(i => {
           let temp = res.data[0].report.foods[i].name
           temp.push(i.name)
           this.setState({
-            name: temp
+            name: res.data[0].report.foods[i].name,
+            servingSize: res.data[0].report.foods[i].measure,
+            calories: res.data[0].report.foods[i].nutrients[0],
+            macronutrients: [
+              {
+              fat: res.data[0].report.foods[i].nutrients[1],
+              protein: res.data[0].report.foods[i].nutrients[2],
+              carbohydrates: res.data[0].report.foods[i].nutrients[3]
+              }
+            ]
           })
        })
-        
+       console.log(this.state)
+
       })
       .catch(err => {
         console.error(err);
       });
   }
 
-  handleClick = (e) => {
-    console.log(e.target.key)
-    this.setState({ 
-        listing : e.target.key
-    })
-}
+//   handleClick = (e) => {
+//     console.log(e.target.key)
+//     this.setState({ 
+//         listing : e.target.key
+//     })
+// }
 
   render() {
     return (
@@ -62,13 +72,13 @@ class App extends Component {
           <main>
             <Nav />
             <Route path="/"
-            exact render={(routeProps) => <Home {...routeProps} />}
+            exact render={(props) => <Home {...props} />}
             />
             <Route path="/list"
-            exact render={(routeProps) => <List {...routeProps} />}
+            exact render={(props) => <List {...props} />}
             />
             <Route path="/food"
-            exact render={(routeProps) => <Food {...routeProps} />}
+            exact render={(props) => <Food {...props} />}
             />
           </main>
         </div>
@@ -76,4 +86,4 @@ class App extends Component {
   }
 }
 
-export default withRouter(App);
+export default App;

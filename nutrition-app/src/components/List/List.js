@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./List.css";
 
 class List extends Component {
-  
+
   render() {
     return (
       <div>
@@ -11,7 +11,7 @@ class List extends Component {
           <ul>
             <li>
               <Link to="/food">
-                Apple
+                {this.props.name}
               </Link>
             </li>
           </ul>
