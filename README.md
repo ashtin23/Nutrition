@@ -50,26 +50,20 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Built With
 
-* [MongoDB](http://www.dropwizard.io/1.0.2/docs/) - The database used
-* [Express](https://maven.apache.org/) - Web framework used
-* [React](https://rometools.github.io/rome/) - The front-end library used
-* [Node.js](http://www.dropwizard.io/1.0.2/docs/) - The run-time environment used
+* [MongoDB](https://www.mongodb.com/) - The database used
+* [Express](https://expressjs.com/) - Web framework used
+* [React](https://reactjs.org/) - The front-end library used
+* [Node.js](https://nodejs.org/en/) - The run-time environment used
 
 ## Contributing
 ct, and the process for submitting pull requests to us.
 
 ## Authors
 
-* **Ashtin Latting** - *Initial work* - [](https://github.com/PurpleBooth)
+* **Ashtin Latting**
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
